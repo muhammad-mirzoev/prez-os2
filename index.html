@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>macOS: Архитектура Будущего</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sci-Fi Киберпространство на фоне -->
+  <div id="stars"></div>
+  <div class="glow"></div>
+  <div class="floor"></div>
+  <div id="prog"></div>
+  <div class="wipe"></div>
+
+  <!-- СЛАЙД 1: Вступление / Эпоха Будущего -->
+  <section class="slide hero-layout on">
+    <div class="stag">
+      <span class="tag">Interactive Keynote</span>
+      <h1 class="big">macOS:<br>Цифровая Одиссея</h1>
+      <p class="lead">Эволюция операционной системы от революционного Macintosh 1984 года до нейросетевого Liquid Glass 2026-го. Загляните под капот легенды.</p>
+    </div>
+    <div class="visual-side">
+      <svg viewBox="0 0 400 400" class="draw" style="--d:0">
+        <rect x="80" y="60" width="240" height="180" rx="20" pathLength="1"/>
+        <path d="M 60 300 L 340 300 L 300 240 L 100 240 Z" pathLength="1"/>
+        <line x1="200" y1="300" x2="200" y2="340" pathLength="1"/>
+        <rect x="150" y="340" width="100" height="10" rx="4" pathLength="1"/>
+        <circle cx="200" cy="150" r="25" pathLength="1"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- СЛАЙД 2: Кто и Зачем? (Истоки) -->
+  <section class="slide era-layout">
+    <aside class="stag">
+      <span class="tag">1984 / Рождение</span>
+      <h2>Зачем создавался Mac?</h2>
+      <p class="lead">В эпоху командной строки и текстовых терминалов <b>Стив Джобс</b> и команда инженеров Apple решили создать компьютер для обычных людей, а не для программистов.</p>
+    </aside>
+    <main>
+      <div class="grid-cards stag">
+        <div class="card">
+          <h3>Концепция GUI</h3>
+          <p>Сделать графический интерфейс стандартом, позаимствовав и доработав идеи лаборатории Xerox PARC.</p>
+        </div>
+        <div class="card">
+          <h3>Интуитивность</h3>
+          <p>Метафора «рабочего стола», папок, файлов и корзины позволила освоить компьютер за 10 минут.</p>
+        </div>
+        <div class="card">
+          <h3>Мышь как продолжение руки</h3>
+          <p>Отказ от клавиатурных сокращений DOS в пользу управления курсором.</p>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!-- СЛАЙД 3: Classic Mac OS (Эра Монолита) -->
+  <section class="slide era-layout">
+    <aside class="stag">
+      <span class="tag">1984 — 2001</span>
+      <h2>Classic Mac OS</h2>
+      <p class="lead">Быстрые, революционные системы, написанные на ассемблере и Pascal. Они дали миру настольное издательство, но упёрлись в потолок из-за отсутствия защиты памяти.</p>
+    </aside>
+    <main>
+      <ul class="chips stag">
+        <li>
+          <time>1984</time>
+          <b>System 1</b>
+          <span>Чёрно-белый экран, Finder, меню-бар и сингл-таскинг (одна программа в один момент времени).</span>
+        </li>
+        <li>
+          <time>1991</time>
+          <b>System 7</b>
+          <span>Полноценный цвет, виртуальная память, кооперативная многозадачность и TrueType-шрифты.</span>
+        </li>
+        <li>
+          <time>1997</time>
+          <b>Mac OS 8</b>
+          <span>Платиновый трехмерный интерфейс, многопоточный Finder. Спасительный релиз после возвращения Джобса.</span>
+        </li>
+        <li>
+          <time>1999</time>
+          <b>Mac OS 9</b>
+          <span>Закат классики. Встроенный поиск Sherlock 2 и зачатки интернет-сервисов.</span>
+        </li>
+      </ul>
+    </main>
+  </section>
+
+  <!-- СЛАЙД 4: NeXTSTEP и Покупка Века -->
+  <section class="slide hero-layout">
+    <div class="stag">
+      <span class="tag">Архитектура</span>
+      <h2>Великое Слияние: NeXT</h2>
+      <p class="lead">В 1996 году Apple покупает компанию NeXT Стива Джобса. Их объектно-ориентированная ОС NeXTSTEP на базе микроядра <b>Mach</b> и <b>UNIX</b> спасает Mac от краха.</p>
+      <div class="legend-box" style="margin-top: 20px;">
+        <div style="--c: var(--a)"><b>XNU Kernel:</b> Гибридное ядро Darwin</div>
+        <div style="--c: #c9a7ff"><b>Cocoa / Next Step API:</b> Фундамент всех современных приложений</div>
+      </div>
+    </div>
+    <div class="visual-side">
+      <div class="orb-container">
+        <svg viewBox="0 0 400 400">
+          <circle cx="200" cy="200" r="180" class="ring"></circle>
+          <circle cx="200" cy="200" r="120" class="ring ring-core"></circle>
+          <g class="pl" style="--t: 8s">
+            <circle cx="200" cy="20" r="10" fill="var(--a)" filter="drop-shadow(0 0 8px var(--a))"></circle>
+          </g>
+          <g class="pl" style="--t: 4s">
+            <circle cx="200" cy="80" r="8" fill="#c9a7ff" filter="drop-shadow(0 0 8px #c9a7ff)"></circle>
+          </g>
+          <circle cx="200" cy="200" r="40" fill="#fff" filter="drop-shadow(0 0 20px #fff)"></circle>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- СЛАЙД 5: Mac OS X (Дикие Кошки) -->
+  <section class="slide era-layout">
+    <aside class="stag">
+      <span class="tag">2001 — 2012</span>
+      <h2>Эра Кошачьих</h2>
+      <p class="lead">Перерождение Mac. Интерфейс <b>Aqua</b> поражал жидкими кнопками и прозрачностью. Система обрела настоящую вытесняющую многозадачность.</p>
+    </aside>
+    <main style="max-height: 70vh; overflow-y: auto;">
+      <ul class="chips stag">
+        <li><time>2001</time><b>10.0 Cheetah</b><span>Тяжелый старт. Красиво, но невероятно медленно.</span></li>
+        <li><time>2002</time><b>10.2 Jaguar</b><span>Появление Quartz Extreme (рендеринг интерфейса видеокартой).</span></li>
+        <li><time>2005</time><b>10.4 Tiger</b><span>Spotlight, виджеты Dashboard. Переход с процессоров PowerPC на Intel!</span></li>
+        <li><time>2007</time><b>10.5 Leopard</b><span>Time Machine, Spaces. Полная сертификация UNIX.</span></li>
+        <li><time>2009</time><b>10.6 Snow Leopard</b><span>Никаких новых функций. Только оптимизация, 64-бит и скорость. Легенда.</span></li>
+        <li><time>2011</time><b>10.7 Lion</b><span>Внедрение жестов трекпада, Launchpad, Mac App Store.</span></li>
+      </ul>
+    </main>
+  </section>
+
+    <!-- СЛАЙД 6: Имена из Калифорнии -->
+    <section class="slide era-layout">
+      <aside class="stag">
+        <span class="tag">2013 — 2019</span>
+        <h2>Калифорнийский Экспресс</h2>
+        <p class="lead">Кошачьи кодовые имена закончились. Apple переходит к географическим локациям Калифорнии. Скевоморфизм уступает место плоскому нео-дизайну.</p>
+      </aside>
+      <main style="max-height: 70vh; overflow-y: auto;">
+        <ul class="chips stag">
+          <li><time>2013</time><b>10.9 Mavericks</b><span>ОС становится полностью бесплатной. Технологии сжатия памяти.</span></li>
+          <li><time>2014</time><b>10.10 Yosemite</b><span>Тотальный редизайн. Экосистемные функции Continuity и Handoff с iPhone.</span></li>
+          <li><time>2015</time><b>10.11 El Capitan</b><span>Графический API Metal ускоряет систему в разы.</span></li>
+          <li><time>2016</time><b>10.12 Sierra</b><span>Официальное переименование OS X в привычное macOS. Появление Siri.</span></li>
+          <li><time>2018</time><b>10.14 Mojave</b><span>Первая полноценная системная Тёмная тема.</span></li>
+          <li><time>2019</time><b>10.15 Catalina</b><span>Смерть легендарного iTunes. Полный отказ от 32-битных приложений.</span></li>
+        </ul>
+      </main>
+    </section>
+  
+    <!-- СЛАЙД 7: Революция Apple Silicon -->
+    <section class="slide hero-layout">
+      <div class="stag">
+        <span class="tag">2020 / Великий Сдвиг</span>
+        <h2>Архитектура Apple Silicon</h2>
+        <p class="lead">macOS Big Sur ознаменовала отказ от процессоров Intel в пользу собственных ARM-чипов линейки <b>Apple M-серии</b>. Невероятная энергоэффективность и производительность.</p>
+        <div class="grid-cards" style="margin-top: 24px;">
+          <div class="card">
+            <h3>Rosetta 2</h3>
+            <p>Встроенный транслятор кода «на лету» позволил старым приложениям Intel работать на ARM-чипах быстрее, чем раньше.</p>
+          </div>
+          <div class="card">
+            <h3>iOS-Наследие</h3>
+            <p>Архитектура позволила запускать любые приложения для iPhone и iPad прямо на экране Mac.</p>
+          </div>
+        </div>
+      </div>
+      <div class="visual-side">
+        <svg viewBox="0 0 400 400" class="draw" style="--d:0">
+          <rect x="100" y="100" width="200" height="200" rx="24" pathLength="1"/>
+          <path d="M 140 140 L 260 140 L 260 260 L 140 260 Z" pathLength="1"/>
+          <line x1="80" y1="150" x2="100" y2="150" pathLength="1"/>
+          <line x1="80" y1="200" x2="100" y2="200" pathLength="1"/>
+          <line x1="80" y1="250" x2="100" y2="250" pathLength="1"/>
+          <line x1="300" y1="150" x2="320" y2="150" pathLength="1"/>
+          <line x1="300" y1="200" x2="320" y2="200" pathLength="1"/>
+          <line x1="300" y1="250" x2="320" y2="250" pathLength="1"/>
+          <line x1="150" y1="80" x2="150" y2="100" pathLength="1"/>
+          <line x1="200" y1="80" x2="200" y2="100" pathLength="1"/>
+          <line x1="250" y1="80" x2="250" y2="100" pathLength="1"/>
+        </svg>
+      </div>
+    </section>
+  
+    <!-- СЛАЙД 8: Сравнительный Анализ Архитектур -->
+    <section class="slide">
+      <div class="stag">
+        <span class="tag">Технический Срез</span>
+        <h2>Сравнение Трех Эпох macOS</h2>
+        <p class="lead" style="margin-bottom: 24px;">Как менялись системные стандарты на протяжении сорока лет разработок в Купертино.</p>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Характеристика</th>
+                <th>Classic OS (1984)</th>
+                <th>OS X Кошки (2001)</th>
+                <th>Modern macOS (2026)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ядро системы</td>
+                <td>Монолитное (Mac-специфичное)</td>
+                <td>Гибридное XNU (Darwin / UNIX)</td>
+                <td>XNU со сквозной нейро-оптимизацией</td>
+              </tr>
+              <tr>
+                <td>Многозадачность</td>
+                <td>Кооперативная (зависело от софта)</td>
+                <td>Вытесняющая (надежная защита)</td>
+                <td>Асинхронная (с приоритизацией NPU)</td>
+              </tr>
+              <tr>
+                <td>Файловая структура</td>
+                <td>HFS</td>
+                <td>HFS+ (Журналируемая)</td>
+                <td>APFS (Оптимизирована под SSD)</td>
+              </tr>
+              <tr>
+                <td>Архитектура чипов</td>
+                <td>Motorola 68k / PowerPC</td>
+                <td>PowerPC / Intel x86</td>
+                <td>Apple Silicon ARM (M1 — M6)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  
+    <!-- СЛАЙД 9: Графики NPU / Эра Нейросетей -->
+    <section class="slide hero-layout">
+      <div class="stag">
+        <span class="tag">Производительность</span>
+        <h2>Бум Искусственного Интеллекта</h2>
+        <p class="lead">С выходом macOS 15 Sequoia и нейросетевого движка <b>Apple Intelligence</b> ключевым фактором скорости работы Mac стал не CPU, а графические сопроцессоры и ядра <b>NPU (Neural Engine)</b>.</p>
+      </div>
+      <div class="visual-side" style="display: block;">
+        <div class="bars-frame stag">
+          <div class="bar-item" style="--h: 5; --i: 0;"><em>1x</em><small>M1 (2020)</small></div>
+          <div class="bar-item" style="--h: 22; --i: 1;"><em>4x</em><small>M2 (2022)</small></div>
+          <div class="bar-item" style="--h: 50; --i: 2;"><em>9x</em><small>M3 (2023)</small></div>
+          <div class="bar-item" style="--h: 78; --i: 3;"><em>14x</em><small>M4 (2024)</small></div>
+          <div class="bar-item" style="--h: 100; --i: 4;"><em>21x</em><small>M6 (2026)</small></div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- СЛАЙД 10: Будущее ОС (Liquid Glass) -->
+    <section class="slide era-layout">
+      <aside class="stag">
+        <span class="tag">2026+ / Будущее рядом</span>
+        <h2>macOS 27 & Liquid Glass</h2>
+        <p class="lead">Релиз macOS 27 Golden Gate представляет концепцию <b>Liquid Glass</b>. Границы между операционной системой, облаком и локальной нейросетью полностью стёрты.</p>
+      </aside>
+      <main>
+        <div class="grid-cards stag">
+          <div class="card">
+            <h3>Нейроморфный Контекст</h3>
+            <p>Система понимает ваши намерения, предугадывая действия пользователя на основе анализа контекста экрана в реальном времени.</p>
+          </div>
+          <div class="card">
+            <h3>Интерфейс-Хамелеон</h3>
+            <p>Элементы окон подстраиваются под фокус вашего взгляда, динамически меняя прозрачность, глубину размытия и цветовую гамму.</p>
+          </div>
+          <div class="card">
+            <h3>Сквозной ИИ (On-Device)</h3>
+            <p>Генерация локальных моделей кода, дизайна и текстов выполняется изолированно на кристалле M-чипа без отправки в сеть.</p>
+          </div>
+        </div>
+      </main>
+    </section>
+  
+    <!-- Панель Управления Навигацией -->
+    <nav class="control-panel">
+      <button class="nav-btn" id="prev" aria-label="Назад">&larr;</button>
+      <div id="dots"></div>
+      <span id="cnt">1 / 10</span>
+      <button class="nav-btn" id="next" aria-label="Вперед">&rarr;</button>
+    </nav>
+  
+    <!-- Управляющее JavaScript Ядро -->
+    <script>
+      const slides = document.querySelectorAll('.slide');
+      const dotsContainer = document.getElementById('dots');
+      const cnt = document.getElementById('cnt');
+      const prog = document.getElementById('prog');
+      const wipe = document.querySelector('.wipe');
+      let currentIdx = 0;
+  
+      // Рассчитываем CSS задержки для staggered-анимации во всех слайдах
+      slides.forEach(slide => {
+        const staggeredItems = slide.querySelectorAll('.stag > *, .chips > li, .bar-item');
+        staggeredItems.forEach((item, index) => {
+          item.style.setProperty('--i', index);
+        });
+      });
+  
+      // Динамически создаем индикаторы-точки
+      slides.forEach((_, i) => {
+        const btn = document.createElement('button');
+        if (i === 0) btn.classList.add('on');
+        btn.setAttribute('aria-label', `Перейти к слайду ${i + 1}`);
+        btn.addEventListener('click', () => changeSlide(i));
+        dotsContainer.appendChild(btn);
+      });
+  
+      // Механика кинематографичной смены слайда
+      function changeSlide(nextIdx) {
+        if (nextIdx < 0 || nextIdx >= slides.length || nextIdx === currentIdx) return;
+        
+        // Запускаем шторку-клиппас
+        wipe.classList.add('go');
+        
+        // Смена контента ровно посередине анимации шторки
+        setTimeout(() => {
+          slides[currentIdx].classList.remove('on');
+          dotsContainer.children[currentIdx].classList.remove('on');
+          
+          currentIdx = nextIdx;
+          
+          slides[currentIdx].classList.add('on');
+          dotsContainer.children[currentIdx].classList.add('on');
+          
+          // Обновляем прогресс и счетчики
+          cnt.textContent = `${currentIdx + 1} / ${slides.length}`;
+          prog.style.width = `${((currentIdx + 1) / slides.length) * 100}%`;
+          
+          // Сбрасываем скролл слайда наверх при переключении
+          slides[currentIdx].scrollTop = 0;
+        }, 400);
+  
+        // Снимаем класс анимации по ее завершении
+        wipe.addEventListener('animationend', () => {
+          wipe.classList.remove('go');
+        }, { once: true });
+      }
+  
+      // Слушатели кнопок навигации
+      document.getElementById('next').addEventListener('click', () => changeSlide(currentIdx + 1));
+      document.getElementById('prev').addEventListener('click', () => changeSlide(currentIdx - 1));
+  
+      // Навигация с клавиатуры (стрелки Влево/Вправо/Пробел)
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          changeSlide(currentIdx + 1);
+        } else if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          changeSlide(currentIdx - 1);
+        }
+      });
+      
+      // Начальная инициализация индикатора прогресса
+      prog.style.width = `${(1 / slides.length) * 100}%`;
+    </script>
+  </body>
+  </html>
+  
